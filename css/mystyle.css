@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+/* *********************************** */
+/* ======== GENERAL Styles =========== */
+img {
+  width: 100%;
+}
+
+/* HEADER AND FOOTER COMMON STYLE */
+.blueBG {
+  background-color: #085070;
+  color: white;
+  text-align: center;
+}
+
+/* *********************************** */
+/* ========= HEADER Style ============ */
+.myHeader {  
+  padding: clamp(10px, 2vw, 25px) 0;
+  font-size: calc(0.7rem + 1vw);
+}
+
+/* Wrapper From Banner To Footer */
+.container {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+/* *********************************** */
+/* ====== FIRST SECTION Style ======== */
+.first-puppies-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.missing-puppy {
+  display: none;
+}
+
+.puppy-2 {
+  margin-top: 2rem;
+}
+
+/* *********************************** */
+/* ====== SECOND SECTION Style ======== */
+.second-puppies-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-title {
+  text-align: center;
+  font-size: calc(0.8rem + 2vw);
+  margin-bottom: 2.5rem;
+}
+
+.puppy-3 {
+  margin-bottom: 2rem;
+}
+
+/* *********************************** */
+/* ========= FOOTER Style ============ */
+footer {
+  padding: clamp(50px, 10vw, 100px) 0;
+}
+
+footer p {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+/* ******* MOBILE STYLE END *********** */
+
+/* ************************************ */
+/* === FOR ALL DEVICES ABOVE MOBILE === */
+@media (min-width: 768px) {
+    /* === FIRST SECTION MEDIA ==== */
+    .first-puppies-section {
+      flex-direction: row;
+      gap: 1.5vw;
+    }
+
+    .first-puppies-section div {
+      flex: 1;
+    }
+
+    .missing-puppy {
+      display: block;
+    }
+
+    .missing-puppy {
+      background-color: #f04d65;
+      color: #000;
+      font-size: clamp(2rem, 5vw, 4rem);
+      text-align: center;
+    }
+
+    .missing-puppy-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+    }
+
+    .first-puppies-section img,
+    .first-puppies-section img {
+      display: block;
+    }
+
+    .puppy-2 {
+      margin-top: 0;
+    }
+
+    /* === SECOND SECTION MEDIA ==== */
+    .second-puppies-section {
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+      justify-content: space-between;
+    }
+
+    .second-puppies-section div {
+      width: 45%;
+    }
+}
